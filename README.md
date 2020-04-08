@@ -8,7 +8,7 @@ O Fastfeet é um aplicativo de entregas de produtos quaisquer, similar a ifood, 
 
 ## 2. Detalhes do projeto
 
-Nos links abaixo, encontram-se os seguintes itens a respeito de cada etapa do projeto:
+Nos README's, encontram-se os seguintes itens a respeito de cada etapa do projeto:
 
 1. Conceitos abordados
 2. Descrição do projeto
@@ -17,10 +17,10 @@ Nos links abaixo, encontram-se os seguintes itens a respeito de cada etapa do pr
 5. Criando o projeto
 
 **Back-end:**
-  https://github.com/MaisDennis/GoStack10.0-Desafio-03
+  https://github.com/MaisDennis/GoStack10.0-Fastfeet/blob/master/fastfeet-backend/README.md
 
 **Web:**
-  https://github.com/MaisDennis/GoStack10.0-Desafio-09
+ https://github.com/MaisDennis/GoStack10.0-Fastfeet/blob/master/fastfeet-web/README.md
 
 **Mobile:**
-  https://github.com/MaisDennis/GoStack10.0-Desafio-10
+  https://github.com/MaisDennis/GoStack10.0-Fastfeet/blob/master/fastfeet-mobile/README.md
