@@ -25,7 +25,32 @@ O Fastfeet é um aplicativo de entregas de produtos quaisquer, similar a ifood, 
 
 1. Iniciar Dbs:
    1. DB SQL para GET / POST / PUT / DELETE de dados.
+      1.  Instalar Docker: https://docs.docker.com/install/
+      2.  Para conferir se está instalado: docker -v
+      3.  Para conferir os comandos: docker help
+      4.  Para criar um serviço do docker em Postgres: https://hub.docker.com/_/postgres
+      5.  Acessar terminal e colocar:
+          1.  5433 - porta do computador - 5432 chama a porta no container onde o postgres está rodando
+              ```
+              docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -p 5433:5432 -d postgres
+              ```
+	        2.  trocar some-postgres e mysecretpassword
+	        3.  Containers em execução: docker ps
+	        4.  Todos os containers: docker ps -a
+	    6.  Para conferir se o banco está rodando, baixar postbird: https://electronjs.org/apps/postbird
+      7.  configurar a porta no arquivo: src/config/database.js
+          1.  Usar como padrão:
+              DB_HOST=localhost
+              DB_USER=postgres
+              DB_PASS=docker
+              DB_NAME=postgres
+      8.  Terminal: yarn sequelize db:migrate
+
    2. DB Mongo para notificações de delivery.
+      1.  Run docker mongo. Ex:
+      ```
+      > docker run --name mongogdash -p 27017:27017 -d -t mongo
+      ```
    3. DB redis para gerenciar a fila de e-mail.
 ```
 docker start database3 (port: 5434)
@@ -34,9 +59,13 @@ docker start redisfastfeet
 ```
 
 2. Iniciar o projeto:
-```
-yarn dev
-```
+   1. Instalar bibliotecas
+    `yarn` ou `npm install`
+
+   2. Script para iniciar o server:
+    ```
+    yarn dev
+    ```
 
 3.  Insomnia
 
