@@ -49,14 +49,19 @@ O Fastfeet é um aplicativo de entregas de produtos quaisquer, similar a ifood, 
    2. DB Mongo para notificações de delivery.
       1.  Run docker mongo. Ex:
       ```
-      > docker run --name mongogdash -p 27017:27017 -d -t mongo
+      docker run --name mongogdash -p 27017:27017 -d -t mongo
       ```
    3. DB redis para gerenciar a fila de e-mail.
-```
-docker start database3 (port: 5434)
-docker start mongofastfeet
-docker start redisfastfeet
-```
+      1. Run docher redis. Ex:
+      ```
+      docker run --name redisbarber -p 6379:6379 -d -t redis:alpine
+      ```
+   4. Iniciar os containers:
+      ```
+      docker start database3 (port: 5434)
+      docker start mongofastfeet
+      docker start redisfastfeet
+      ```
 
 2. Iniciar o projeto:
    1. Instalar bibliotecas
