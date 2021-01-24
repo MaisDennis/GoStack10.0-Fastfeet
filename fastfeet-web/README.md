@@ -32,14 +32,12 @@ Pelo aplicativo mobile, o entregador pode iniciar uma entrega, encerrar a entreg
 <img src="https://github.com/MaisDennis/GoStack10.0-Desafio-09/blob/master/src/assets/DeliverymanCreate.png" alt="SignIn" width="100%" height="auto">
 
 ##  3. Iniciando o projeto
-```
-yarn start
-```
-Acesso de administrador:
-
-  email: admin@fastfeet.com
-  senha: 123123
-
+   1. Instalar bibliotecas
+      `yarn` ou `npm install`
+   2. Script para iniciar:
+      ```
+      yarn start
+      ```
 ##  4. Enunciado do projeto
 
 <h1 align="center">
