@@ -52,7 +52,7 @@ O Fastfeet é um aplicativo de entregas de produtos quaisquer, similar a ifood, 
       docker run --name mongogdash -p 27017:27017 -d -t mongo
       ```
    3. DB redis para gerenciar a fila de e-mail.
-      1. Run docher redis. Ex:
+      1. Run docker redis. Ex:
       ```
       docker run --name redisbarber -p 6379:6379 -d -t redis:alpine
       ```
